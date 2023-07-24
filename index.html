@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="description" content="DevFolio Bootstrap Portfolio">
+    <meta name="keywords" content="DevFolio, Bootstrap, Portfolio ,About , Service , Blog ">
+    <meta name="author" content="Reema">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE , ICON -->
+    <title>Quotes App</title>
+    <link rel="icon" href="./images/favicon.png" type="image/icon type">
+    <!-- GOOGLE-FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP-CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- BOOTSTRAP-ICONS -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <main class="container my-5">
+
+        <div class="bokmarker_title  text-center">
+            <h1 class="text-capitalize mb-5">bookmarker</h1>
+        </div>
+        <div class="bokmarker_block">
+            <h3 class="text-center mt-4">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h3>
+            <div class="bookmark_form">
+                <!-- SITE-NAME -->
+                <div>
+                    <label for="site-name" class="fw-bolder">
+                        <i class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
+                    <input type="text" name="name" id="site-name" class="form-control mt-2" value=""
+                        placeholder="Bookmark Name">
+                    <small class="text-danger   d-none" id="nameError">Website name is not valid</small>
+                </div>
+                <!-- SITE-URL -->
+                <div class="mt-3">
+                    <label for="site-url" class="fw-bolder">
+                        <i class="fa-solid fa-link me-2"></i> Site URL</label>
+                    <input type="text" name="name" id="site-url" class="form-control mt-2" value=""
+                        placeholder="Website URL">
+                    <small class="text-danger  d-none" id="urlError">Website name is not valid</small>
+                </div>
+                <button class="btn text-capitalize text-white px-5 py-2  d-block mx-auto mt-5 
+                 bookmark_submit mb-4" onclick="submitForm()">submit</button>
+            </div>
+        </div>
+        <div class="table_block">
+            <table class="table mt-4">
+                <thead>
+                    <td>Index</td>
+                    <td>Website Name</td>
+                    <td>Visit</td>
+                    <td>Action</td>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F7ECDE
+}
+
+main .bokmarker_title {
+    border-bottom: 2px dotted black
+}
+
+main .bokmarker_title h1 {
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    font-size: 50px;
+    z-index: 999;
+}
+
+main .bokmarker_title h1::after {
+    content: "";
+    position: absolute;
+    right: 30%;
+    left: 25%;
+    bottom: 5%;
+    width: 50%;
+    height: 40%;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: all 0.5s;
+
+}
+
+main .bokmarker_title h1:hover::after {
+    height: 70%;
+}
+
+main .bokmarker_block h3 {
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .bokmarker_block .bookmark_form .bookmark_submit {
+    background-color: #BB4120;
+}
+
+main .table_block {
+    border-top: 2px dotted black;
+
+}
+main .table_block td{
+    text-align: center;
+}
